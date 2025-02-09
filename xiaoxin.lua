@@ -5033,11 +5033,33 @@ Tab:AddButton({
   end
 
 })
+})
 
+local Tab = Window:MakeTab({
+
+  Name = "CHAIN",
+
+  Icon = "rbxassetid://4483345998",
+
+  PremiumOnly = false
+
+})
+
+Tab:AddButton({
+
+	Name = "lnfinitely",
+
+	Callback = function()
+local __namecall__namecall = hookmetamethod(game, "__namecall", function(self, ...)    if not checkcaller() then        if getnamecallmethod() == "FireServer" then            if self.Name == "CTS" then                local args = {...}                if args[1] == "DoneDodge" then                    print('dodgeagain0_0')                    args[1] = "Dodge"                end                return __namecall(self, unpack(args))            end;        end;    end;    return __namecall(self, ...)end);
+   
+
+  	end    
+
+})
 
 end)
 end
-local myTitle = "nb脚本协议条款" 
+local myTitle = "小欣脚本协议条款" 
 CreateGUI(myTitle)
  
   
