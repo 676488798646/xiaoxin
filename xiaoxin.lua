@@ -1,6 +1,4 @@
-本地UserInputService=game:GetService("UserInputService")
-
-local function CreateGUI(title)
+    local function CreateGUI(title)
     local gui = Instance.new("ScreenGui")
     gui.Name = "MyGUI"
     gui.ResetOnSpawn = false
