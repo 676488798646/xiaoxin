@@ -1,4 +1,4 @@
-local UserInputService = game:GetService("UserInputService")
+本地UserInputService=game:GetService("UserInputService")
 
 local function CreateGUI(title)
     local gui = Instance.new("ScreenGui")
@@ -4980,86 +4980,86 @@ Tab:AddButton({
 
   Name = "紫光十字架",
 
-  Callback = function ()
+回调=功能（）
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi3"))()
+loadstring(游戏：HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi3"))()
 
-  end
-
-})
-
-Tab:AddButton({
-
-  Name = "万圣节十字架",
-
-  Callback = function ()
-
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi4"))()
-
-  end
+  结束
 
 })
 
-Tab:AddButton({
+选项卡：AddButton({
 
-  Name = "普通十字架",
+name="万圣节十字架",
 
-  Callback = function ()
+回调=功能（）
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))()
+loadstring(游戏：HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizi4"))()
 
-  end
-
-})
-
-local Tab = Window:MakeTab({
-
-	Name = "水下世界",
-
-	Icon = "rbxassetid://4483345998",
-
-	PremiumOnly = false
+  结束
 
 })
 
-Tab:AddButton({
+选项卡：AddButton({
 
-	Name = "水下世界卡密xiaoxiaoyu",
+name="普通十字架",
 
-	Callback = function()
+回调=功能（）
 
-    loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\52\118\53\110\55\110\47\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\47\109\97\105\110\47\85\110\100\101\114\119\97\116\101\114\37\50\48\119\111\114\108\100\46\108\117\97\34\41\41\40\41\10")()
+loadstring(游戏：HttpGet("https://raw.githubusercontent.com/cbhlyy/lyycbh/main/shizizhen"))()
 
-  end
+  结束
+
+})
+
+当地的tab=窗口：MakeTab({
+
+name="水下世界",
+
+图标="rbxassetid://4483345998",
+
+PremiumOnly=假的
+
+})
+
+选项卡：AddButton({
+
+name="水下世界卡密小笑语",
+
+回调=功能（）
+
+负载串("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\52\118\53\110\55\110\47\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\108\47\109\97\105\110\47\85\110\100\101\114\119\97\116\101\114\37\50\48\119\111\114\108\100\46\108\117\97\34\41\41\40\41\10")()
+
+  结束
 
 })
 })
 
-local Tab = Window:MakeTab({
+当地的tab=窗口：MakeTab({
 
-  Name = "CHAIN",
+name="链条",
 
-  Icon = "rbxassetid://4483345998",
+图标="rbxassetid://4483345998",
 
-  PremiumOnly = false
+PremiumOnly=假的
 
 })
 
-Tab:AddButton({
+选项卡：AddButton({
 
-	Name = "lnfinitely",
+name="无限",
 
-	Callback = function()
-local __namecall__namecall = hookmetamethod(game, "__namecall", function(self, ...)    if not checkcaller() then        if getnamecallmethod() == "FireServer" then            if self.Name == "CTS" then                local args = {...}                if args[1] == "DoneDodge" then                    print('dodgeagain0_0')                    args[1] = "Dodge"                end                return __namecall(self, unpack(args))            end;        end;    end;    return __namecall(self, ...)end);
+回调=功能（）
+当地的__namecall__namecall=hookmetamethod(游戏，"__namecall",功能(自我，...)如果 不checkcaller()然后        如果getnamecallmethod()=="FireServer" 然后            如果self.name=="CTS" 然后                当地的args={...}如果args[1] =="DoneDodge" 然后打印('dodge again0_0')args[1] ="闪避"                结束                返回__namecall(self，unpack(args))结束;结束;结束;返回__namecall(self，...)结束);
    
 
-  	end    
+  	结束    
 
 })
 
-end)
-end
-local myTitle = "小欣脚本协议条款" 
-CreateGUI(myTitle)
+结束)
+结束
+当地的mytitle="小欣脚本协议条款" 
+CreateGUI(mytitle)
  
   
