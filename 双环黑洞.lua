@@ -342,10 +342,10 @@ ToggleButton.MouseButton1Click:Connect(function()
 end)
 
 local function updateSpeed(change)
-    BASE_SPEED = math.clamp(BASE_SPEED + change, 1, 20)
+    BASE_SPEED = math.clamp(BASE_SPEED + change, 1, 100)
     RingNetwork.Rings[1].Speed = BASE_SPEED
     RingNetwork.Rings[2].Speed = BASE_SPEED * 0.8
-    SpeedDisplay.Text = "SPEED: "..BASE_SPEED
+    SpeedDisplay.Text = "速度: "..BASE_SPEED
     playSound("177266782")
 end
 
@@ -356,7 +356,7 @@ local function updateRadius(change)
     BASE_RADIUS = math.clamp(BASE_RADIUS + change, 5, 100)
     RingNetwork.Rings[1].Radius = BASE_RADIUS
     RingNetwork.Rings[2].Radius = BASE_RADIUS + RADIUS_INCREMENT
-    RadiusDisplay.Text = "RADIUS: "..BASE_RADIUS
+    RadiusDisplay.Text = "半径: "..BASE_RADIUS
     playSound("177266782")
 end
 
@@ -366,9 +366,9 @@ RadiusUp.MouseButton1Click:Connect(function() updateRadius(5) end)
 local function updateRingAngle(ringIndex, change)
     RingNetwork.Rings[ringIndex].Angle = (RingNetwork.Rings[ringIndex].Angle + change) % 360
     if ringIndex == 1 then
-        Ring1AngleDisplay.Text = "RING1 ANGLE: "..math.floor(RingNetwork.Rings[1].Angle).."°"
+        Ring1AngleDisplay.Text = "黑洞1  角度: "..math.floor(RingNetwork.Rings[1].Angle).."°"
     else
-        Ring2AngleDisplay.Text = "RING2 ANGLE: "..math.floor(RingNetwork.Rings[2].Angle).."°"
+        Ring2AngleDisplay.Text = "黑洞2  角度: "..math.floor(RingNetwork.Rings[2].Angle).."°"
     end
     playSound("177266782")
 end
