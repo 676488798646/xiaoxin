@@ -11,7 +11,7 @@ local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 
 -- =====================================================
--- 界面创建
+-- GUI CREATION
 -- =====================================================
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "超级环绕部件GUI"
@@ -29,7 +29,7 @@ local UICorner = Instance.new("UICorner")
 UICorner.CornerRadius = UDim.new(0, 10)
 UICorner.Parent = MainFrame
 
--- 标题栏
+-- Title Bar
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, -60, 0, 28)
 Title.Position = UDim2.new(0, 3, 0, 3)
@@ -44,7 +44,7 @@ local TitleCorner = Instance.new("UICorner")
 TitleCorner.CornerRadius = UDim.new(0, 10)
 TitleCorner.Parent = Title
 
--- 最小化按钮
+-- Close Button
 local MinimizeButton = Instance.new("TextButton")
 MinimizeButton.Size = UDim2.new(0, 24, 0, 24)
 MinimizeButton.Position = UDim2.new(1, -54.75, 0, 5)
@@ -59,7 +59,7 @@ local MinimizeCorner = Instance.new("UICorner")
 MinimizeCorner.CornerRadius = UDim.new(1, 0)
 MinimizeCorner.Parent = MinimizeButton
 
--- 关闭按钮
+-- Content Container
 local CloseButton = Instance.new("TextButton")
 CloseButton.Size = UDim2.new(0, 24, 0, 24)
 CloseButton.Position = UDim2.new(1, -28, 0, 5)
