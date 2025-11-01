@@ -349,8 +349,8 @@ local function updateSpeed(change)
     playSound("177266782")
 end
 
-SpeedDown.MouseButton1Click:Connect(function() updateSpeed(-1) end)
-SpeedUp.MouseButton1Click:Connect(function() updateSpeed(1) end)
+SpeedDown.MouseButton1Click:Connect(function() updateSpeed(-5) end)
+SpeedUp.MouseButton1Click:Connect(function() updateSpeed(5) end)
 
 local function updateRadius(change)
     BASE_RADIUS = math.clamp(BASE_RADIUS + change, 5, 100)
