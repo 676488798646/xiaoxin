@@ -78,7 +78,7 @@ CloseButton.MouseButton1Click:Connect(function()
     ScreenGui:Destroy()
 end)
 
--- 内容容器
+-- Content Container
 local ContentFrame = Instance.new("Frame")
 ContentFrame.Size = UDim2.new(1, -12, 1, -38)
 ContentFrame.Position = UDim2.new(0, 6, 0, 34)
@@ -86,9 +86,9 @@ ContentFrame.BackgroundTransparency = 1
 ContentFrame.Parent = MainFrame
 
 -- =====================================================
--- 配置和状态
+-- CONFIGURATION & STATE
 -- =====================================================
--- 环绕配置
+-- Ring configuration
 local config = {
     enabled = false,
     radius = 50,
@@ -112,12 +112,12 @@ local currentOutline = nil
 
 local function saveConfig()
     local configStr = HttpService:JSONEncode(config)
-    writefile("超级环绕部件配置.txt", configStr)
+    writefile("SuperRingPartsConfig.txt", configStr)
 end
 
 local function loadConfig()
-    if isfile("超级环绕部件配置.txt") then
-        local configStr = readfile("超级环绕部件配置.txt")
+    if isfile("SuperRingPartsConfig.txt") then
+        local configStr = readfile("SuperRingPartsConfig.txt")
         local loadedConfig = HttpService:JSONDecode(configStr)
         if type(loadedConfig) == "table" then
             for key, value in pairs(loadedConfig) do
@@ -130,7 +130,7 @@ end
 loadConfig()
 
 -- =====================================================
--- 环绕模式
+-- ORBIT PATTERNS
 -- =====================================================
 local orbitPatterns = {
     circle = "圆形",
@@ -146,9 +146,9 @@ local orbitPatterns = {
 }
 
 -- =====================================================
--- 界面控件
+-- GUI CONTROLS
 -- =====================================================
--- 环绕开关按钮
+-- Ring Toggle Button
 local RingToggleButton = Instance.new("TextButton")
 RingToggleButton.Size = UDim2.new(0, 48, 0, 32)
 RingToggleButton.Position = UDim2.new(0, 0, 0, 0)
@@ -170,7 +170,7 @@ RingToggleButton.MouseButton1Click:Connect(function()
     saveConfig()
 end)
 
--- 模式切换图标按钮
+-- Mode Toggle Icon Button
 local ModeToggleButton = Instance.new("ImageButton")
 ModeToggleButton.Size = UDim2.new(0, 32, 0, 32)
 ModeToggleButton.Position = UDim2.new(0, 52, 0, 0)
@@ -197,7 +197,7 @@ ModeToggleButton.MouseButton1Click:Connect(function()
     saveConfig()
 end)
 
--- 玩家名称输入框
+-- Player Name Input Box
 local PlayerNameBox = Instance.new("TextBox")
 PlayerNameBox.Size = UDim2.new(1, -144, 0, 32)
 PlayerNameBox.Position = UDim2.new(0, 88, 0, 0)
@@ -219,7 +219,7 @@ PlayerNameBox.FocusLost:Connect(function()
     saveConfig()
 end)
 
--- 部件选择按钮
+-- Part Selection Button
 local PartSelectionButton = Instance.new("TextButton")
 PartSelectionButton.Size = UDim2.new(1, -144, 0, 32)
 PartSelectionButton.Position = UDim2.new(0, 88, 0, 0)
@@ -241,7 +241,7 @@ PartSelectionButton.MouseButton1Click:Connect(function()
     PartSelectionButton.BackgroundColor3 = Color3.fromRGB(50, 125, 50)
 end)
 
--- 环绕模式下拉菜单
+-- Orbit Pattern Dropdown
 local PatternLabel = Instance.new("TextLabel")
 PatternLabel.Size = UDim2.new(0, 100, 0, 20)
 PatternLabel.Position = UDim2.new(0, 0, 0, 40)
@@ -282,7 +282,7 @@ local PatternListCorner = Instance.new("UICorner")
 PatternListCorner.CornerRadius = UDim.new(0, 6)
 PatternListCorner.Parent = PatternList
 
--- 填充模式列表
+-- Populate pattern list
 local patternY = 0
 for patternKey, patternName in pairs(orbitPatterns) do
     local PatternOption = Instance.new("TextButton")
