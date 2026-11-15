@@ -342,5 +342,4 @@ local function SendChatMessage(message)
     else
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
     end
-end"
- https://chat.deepseek.com/share/8oesqh8xjt7p6r9wh7#:~:text=local%20Players%20%3D%20game,All%22)%0A%20%20%20%20end%0Aend
+end
