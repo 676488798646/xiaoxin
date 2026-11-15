@@ -42,7 +42,7 @@ UICorner.Parent = MainFrame
 local Title = Instance.new("TextLabel")
 Title.Size = UDim2.new(1, 0, 0, 40)
 Title.Position = UDim2.new(0, 0, 0, 0)
-Title.Text = "超级环绕部件 v3"
+Title.Text = "环绕 v3"
 Title.TextColor3 = Color3.fromRGB(101, 67, 33) -- Dark brown
 Title.BackgroundColor3 = Color3.fromRGB(222, 184, 135) -- Lighter brown
 Title.Font = Enum.Font.Fondamento -- More elegant font
@@ -117,7 +117,7 @@ RadiusCorner.Parent = RadiusDisplay
 local Watermark = Instance.new("TextLabel")
 Watermark.Size = UDim2.new(1, 0, 0, 20)
 Watermark.Position = UDim2.new(0, 0, 1, -20)
-Watermark.Text = "超级环绕 [V3] - 由 Projeto LKB 破解"
+Watermark.Text = "环绕 [V3] - by xiaoxin"
 Watermark.TextColor3 = Color3.fromRGB(101, 67, 33) -- Dark brown
 Watermark.BackgroundTransparency = 1
 Watermark.Font = Enum.Font.Fondamento
@@ -309,7 +309,7 @@ DecreaseRadius.MouseButton1Click:Connect(function()
 end)
 
 IncreaseRadius.MouseButton1Click:Connect(function()
-    radius = math.min(100, radius + 5)
+    radius = math.min(120, radius + 5)
     RadiusDisplay.Text = "半径: " .. radius
     playSound("12221967")
 end)
@@ -328,7 +328,7 @@ local thumbSize = Enum.ThumbnailSize.Size420x420
 local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
 
 StarterGui:SetCore("SendNotification", {
-    Title = "Enjoy Super Ring [V3]",
+    Title = "享受 Super Ring [V3]",
     Text = "Cracked By .gg/3kZ7dKbJPe",
     Icon = content,
     Duration = 5
